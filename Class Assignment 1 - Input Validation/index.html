@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Details</title>
+<link rel="stylesheet" href="style.css">
+<script src="reservation_form_validation.js" defer></script>
+
+</head>
+<body>
+
+<h2>Student Details</h2>
+<form action="process_reservation.php" method="post" id="reservationForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required  pattern="^[A-Za-z0-9 .,\-_]+$" placeholder="Enter your name"><br><br>
+
+    <label for="matric_no"> Matric No:</label><br>
+    <input type="number" id="matric_no" name="matric_no" required pattern="^\d{7}$" minlength="7" maxlength="7" placeholder="Enter your matriculation number"><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Enter your phone number (e.g. 012-345-6789)"><br><br>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Enter your email address"><br><br>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="4" required  pattern="^[A-Za-z0-9 .,\-_]+$"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
