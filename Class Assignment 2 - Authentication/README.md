@@ -38,6 +38,13 @@
   3. Populates the edit form with the existing record data.
   4. Updates the record in the database with the new data upon form submission.
 
+- Validation:
+  - Name: Only alphabetic characters and spaces are allowed. ```'/^[a-zA-Z\s]+$/'```
+  - Matriculation Number: Must consist of exactly 7 digits. ```'/^\d{7}$/'```
+  - Email: Must adhere to the standard email format. ```'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'```
+  - Address: Allows alphanumeric characters, spaces, commas, and hyphens. ```'/^[a-zA-Z0-9\s,]+$/'```
+  - Phone Number: Must be in the format XXX-XXX-XXXX (e.g., 123-456-7890). ```'/^\d{3}-\d{3}-\d{4}$/'```
+  
 ### 5. delete.php
 - Purpose: Allows users to delete an existing student record.
 - Sequence:
