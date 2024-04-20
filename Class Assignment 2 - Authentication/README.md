@@ -71,7 +71,7 @@ CREATE TABLE users (
   1. Retrieves the ID of the student record to be deleted from the URL query parameters.
   2. Deletes the record from the database based on the ID.
 
-### 6. login.php
+### 6. login.php and register.php
 - Purpose: Provides user authentication functionality.
 - Sequence:
   1. Retrieves email and password from the login form via POST method.
