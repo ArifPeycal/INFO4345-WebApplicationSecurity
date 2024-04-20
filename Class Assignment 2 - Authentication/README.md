@@ -6,7 +6,27 @@
   - Creates a new MySQLi object ($conn) representing the database connection.
   - Checks the connection status. If the connection fails, it terminates the script and displays an error message.
 - Validation: Ensures that the connection to the database server is successful.
+```sql
+CREATE DATABASE students;
+USE students;
 
+CREATE TABLE student_records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    matric_no VARCHAR(10) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    phone VARCHAR(12) NOT NULL
+);
+```
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+```
 ### 2. index.php
 - Purpose: Allow users to view, edit, and delete student records.
 - Sequence:
