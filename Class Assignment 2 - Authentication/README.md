@@ -74,7 +74,7 @@ CREATE TABLE users (
 ### 6. login.php
 - Purpose: Provides user authentication functionality.
 - Sequence:
-  1. Retrieves username and password from the login form via POST method.
-  2. Validates the username's existence and verifies the hashed password against the stored hash in the database.
+  1. Retrieves email and password from the login form via POST method.
+  2. Validates the email's existence and verifies the hashed password against the stored hash in the database.
   3. Sets session variables upon successful authentication and redirects to index.php.
 
